@@ -57,7 +57,7 @@ export const CardsDataComponent = () => {
   const [timestamps, setTimestamps] = useState([]);
 
   const fetchData = () => {
-    fetch('https://api.xsmartagrichain.com/data/1h')
+    fetch('https://api.xsmartagrichain.com/data/15m')
       .then(response => response.json())
       .then(data => {
         if (data && data.length > 0) {

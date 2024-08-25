@@ -13,7 +13,7 @@ export default function BasicTable() {
   const [rows, setRows] = useState([]);
 
   const fetchData = () => {
-    fetch("https://api.xsmartagrichain.com/data/1h")
+    fetch("https://api.xsmartagrichain.com/data/15m")
       .then((response) => response.json())
       .then((data) => {
         // Ambil 4 data terakhir dan urutkan dari terlama ke terbaru
