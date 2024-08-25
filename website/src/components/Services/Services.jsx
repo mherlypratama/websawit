@@ -24,13 +24,17 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color:  "" }}>My Awesome</span>
-        <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
-        </spane>
+        <span style={{ color:  "" }}>Our Innovative</span>
+        <span>Services</span>
+        <span>
+        Kami menyediakan solusi teknologi terdepan untuk memantau dan 
+        <br />
+        mengelola perkebunan kelapa sawit secara efisien dan transparan.
+        <br />
+        Melalui teknologi blockchain dan drone rover, kami membawa revolusi 
+        <br />
+        dalam pengelolaan perkebunan.
+        </span>
         {/* <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a> */}
@@ -46,8 +50,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Monitoring"}
+            detail={"Pemantauan otomatis dengan Drone Rover untuk kesehatan tanaman, kebutuhan pemupukan, dan pengendalian hama."}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +62,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Data Management"}
+            detail={"Pengelolaan data perkebunan dengan Blockchain untuk transparansi dan akuntabilitas yang lebih baik."}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +74,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Automation"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Automatisasi proses pemeliharaan tanaman, seperti pemupukan dan penyemprotan, berdasarkan data real-time."
             }
             color="rgba(252, 166, 31, 0.45)"
           />

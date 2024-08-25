@@ -21,16 +21,17 @@ const Intro = () => {
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color:  "" }}>Towards </span>
-          <span>Infinity & Beyond</span>
+          <span style={{ color:  "" }}>Smart Agriculture </span>
+          <span>with Drone-Rover</span>
           <span>
-            Monitoring dan Penyemprotan Buah di Perkebunan Kelapa Sawit dengan 
-            Drone-Rover dari Tim Universitas Lampung
+          Meningkatkan Produktivitas Perkebunan Kelapa Sawit dengan Teknologi 
+          Blockchain dan Drone Rover dari Universitas Lampung
           </span>
         </div>
-        <Link to="/dashboard">
-          <button className="button i-button">Dashboard</button>
-        </Link>
+        <Link to="/dashboard" className="i-button" style={{ textDecoration: 'none' }}>
+  <button className="button">Dashboard</button>
+</Link>
+
         {/* social icons */}
         <div className="i-icons">
           <img src={Github} alt="" />

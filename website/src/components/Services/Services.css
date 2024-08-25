@@ -61,11 +61,12 @@
 
 @media screen and (max-width: 480px) {
   .services {
-    margin-top: 0;
+    margin-top: 30rem;
     flex-direction: column;
     gap: 5rem;
     height: 66rem;
     padding: 0;
+    display: none;
   }
 
   .cards {

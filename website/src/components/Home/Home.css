@@ -3,13 +3,12 @@
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Memastikan elemen tidak di tengah secara vertikal */
-  align-items: stretch; /* Membuat elemen menggunakan lebar penuh */
-  height: 100vh; /* Full height of the viewport */
-  width: 100vw; /* Full width of the viewport */
+  justify-content: flex-start; 
+  align-items: stretch; 
+  height: 100vh; 
+  width: 100vw;
   padding: 0.5rem 3.5rem;
-  /* overflow: hidden; */
-  color: var(--black);  
+  color: var(--black);
 }
 
 .home h1 {
@@ -27,7 +26,7 @@
   box-shadow: 0px 20px 24px 3px rgba(40, 251, 40, 0.42);
   border-radius: 34px;
   border: none;
-  color: white;
+  color: white; 
   font-size: 16px;
   padding: 11px 26px;
   cursor: pointer;
@@ -41,6 +40,8 @@
   border: 1px solid var(--orange);
   text-decoration: none;
   color: var(--orange);
+  text-decoration: none;
+
 }
 
 
@@ -53,4 +54,25 @@
   font-size: 16px;
   height: auto; /* Biarkan tinggi otomatis */
   text-decoration: none;
+}
+
+
+/* Tambahkan media query untuk perangkat kecil */
+@media screen and (max-width: 480px) {
+  .home {
+    padding: 0.5rem 1rem;
+    justify-content: flex-start;
+  }
+
+  .home h1 {
+    font-size: 1rem; /* Kurangi ukuran font untuk judul */
+  }
+
+  .home p {
+    font-size: 1.2rem; /* Kurangi ukuran font untuk paragraf */
+  }
+  .button{
+    width: 200px;
+    height: auto;
+  }
 }

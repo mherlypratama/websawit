@@ -1,10 +1,11 @@
 .Intro {
-    display: flex;
-    height: 77vh;
-    margin-top: 4rem;
-    justify-content: space-between; /* Memastikan elemen tersebar horizontal */
-    padding: 0 2rem; /* Tambahkan padding jika perlu */
-    width: 100%; /* Menggunakan lebar penuh */
+  display: flex;
+  flex-direction: row;
+  height: 77vh;
+  margin-top: 4rem;
+  justify-content: space-between; 
+  padding: 0 2rem; 
+  width: 100%; 
   }
   
   /* left side styling */
@@ -45,7 +46,7 @@
     
   }
   .i-icons {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     gap: 0rem;
   }
@@ -100,23 +101,41 @@
     filter: blur(72px);
   }
   
-  @media screen and (max-width: 480px) {
-    .Intro {
-      flex-direction: column;
-      gap: 7rem;
-      height: 64rem;
-    }
-  
-    .i-right {
-      transform: scale(0.8);
-      left: -3rem;
-    }
-    .i-right .blur {
-      display: none;
-    }
-    .floating-div:nth-of-type(1){
-      /* display: none; */
-      top: -7rem !important;;
-    }
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .Intro {
+    flex-direction: column; /* Susun vertikal di perangkat kecil */
+    align-items: center; /* Pusatkan semua elemen */
+    padding: 0 1rem; /* Kurangi padding */
+    height: auto; /* Sesuaikan tinggi secara otomatis */
+    margin-top: 2rem; /* Kurangi margin atas */
   }
+
+  .i-left, .i-right {
+    width: 100%; /* Gunakan lebar penuh untuk elemen kiri dan kanan */
+    align-items: center; /* Pusatkan elemen di perangkat kecil */
+  }
+
+  .i-name {
+    text-align: center; /* Pusatkan teks */
+    margin-top: 1rem;
+  }
+
+  .i-button {
+    width: 80%; /* Gunakan lebar tombol yang lebih besar untuk perangkat kecil */
+    height: auto;
+    padding: 10px 20px; /* Pastikan padding cukup */
+  }
+
+  .i-right > img {
+    transform: scale(0.8); /* Kurangi ukuran gambar */
+    left: 0; /* Pusatkan gambar */
+    top: 0;
+    display: none;
+  }
+
+  .i-right .blur {
+    display: none; /* Sembunyikan blur di perangkat kecil */
+  }
+}
   
