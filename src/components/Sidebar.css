@@ -118,3 +118,12 @@
   }
 }
 
+.menuItemLink {
+  color: var(--fontColor); /* Sama seperti warna font menu lainnya */
+  text-decoration: none;
+}
+
+.menuItemLink:hover {
+  color: var(--fontColor); /* Pastikan warna tidak berubah saat di-hover */
+}
+

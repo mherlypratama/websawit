@@ -1,0 +1,48 @@
+/* src/components/Home/Home.css */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Memastikan elemen tidak di tengah secara vertikal */
+  align-items: stretch; /* Membuat elemen menggunakan lebar penuh */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  padding: 0.5rem 3.5rem;
+  /* overflow: hidden; */
+  color: var(--black);  
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+
+.button {
+  background: linear-gradient(180deg, #4ed659 26.71%, #67da5d 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(40, 251, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+}
+
+.button:hover {
+  background: white;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+
+  }
+}
+
