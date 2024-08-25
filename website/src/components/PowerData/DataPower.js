@@ -9,7 +9,7 @@ export const CardsDataComponent = () => {
   const [timestamps, setTimestamps] = useState([]);
 
   const fetchData = () => {
-    fetch('http://api.xsmartagrichain.com/battery#')
+    fetch('https://api.xsmartagrichain.com/battery#')
       .then(response => response.json())
       .then(data => {
         if (data && data.length > 0) {

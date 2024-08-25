@@ -14,7 +14,7 @@ export default function BasicTable() {
 
   const fetchData = () => {
     
-    fetch("http://api.xsmartagrichain.com/battery#")
+    fetch("https://api.xsmartagrichain.com/battery#")
       .then((response) => response.json())
       .then((data) => {
         // Ambil 4 data terakhir dan urutkan dari terlama ke terbaru

@@ -8,7 +8,7 @@ const NonFungibleToken = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://api.xsmartagrichain.com/data/image')
+    fetch('https://api.xsmartagrichain.com/data/image')
       .then(response => response.json())
       .then(data => {
         const lastSixData = data.slice(-8).reverse();
