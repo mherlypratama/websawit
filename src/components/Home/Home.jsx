@@ -15,10 +15,6 @@ const Home = () => {
       <Services/>
       <Works/>
       <Footer/>
-
-
-
-
       
     </div>
   );

@@ -2,7 +2,7 @@
   padding: 0 3rem 0 3rem;
   display: flex;
   height: 90vh;
-  margin-top: 4rem;
+  margin-top: 10rem;
 
   /* scroll */
   align-items: center;
@@ -41,7 +41,7 @@
 }
 
 .w-mainCircle {
-  left: 9rem;
+  left: 15rem;
   position: relative;
   width: 18rem;
   height: 18rem;
@@ -102,7 +102,7 @@
   z-index: 1;
 }
 .blueCircle {
-  background: #1949b8;
+  background: #34b819;
   left: 18rem;
   top: 0rem;
 }

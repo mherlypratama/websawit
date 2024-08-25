@@ -1,7 +1,7 @@
 .Intro {
     display: flex;
     height: 77vh;
-    margin-top: 6rem;
+    margin-top: 4rem;
     justify-content: space-between; /* Memastikan elemen tersebar horizontal */
     padding: 0 2rem; /* Tambahkan padding jika perlu */
     width: 100%; /* Menggunakan lebar penuh */
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    margin-top: 1rem;
   }
   .i-name > :nth-child(1) {
     color: var(--black);
@@ -35,20 +36,21 @@
     font-weight: 100;
     font-size: 14px;
     color: var(--gray);
-    margin-top: 10px;
+    margin-top: 1.5rem;
   }
   .i-button {
-    width: 6rem;
-    height: 2rem;
+    width: 7rem;
+    height: 3rem;
+    
   }
   .i-icons {
-    margin-top: 3rem;
+    margin-top: 5rem;
     display: flex;
     gap: 0rem;
   }
   .i-icons > * {
     transform: scale(0.5);
-  }
+  } 
   .i-icons > *:hover {
     cursor: pointer;
   }

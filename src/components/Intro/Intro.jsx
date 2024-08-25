@@ -1,40 +1,34 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Intro.css";
 import Vector1 from "../../imgs/slime.png";
 import Vector2 from "../../imgs/Vector2.png";
-import boy from "../../imgs/rover.png";
-import glassesimoji from "../../imgs/glassesimoji.png";
+import boy from "../../imgs/rover2.png";
+import glassesimoji from "../../imgs/buah.png";
 import thumbup from "../../imgs/thumbup.png";
 import crown from "../../imgs/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../imgs/github.png";
 import LinkedIn from "../../imgs/linkedin.png";
 import Instagram from "../../imgs/instagram.png";
-// import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
-const Intro = () => {
-  // Transition
-  const transition = { duration: 2, type: "spring" };
+import { Link } from "react-router-dom"; // Ganti impor Link
 
-  // context
-//   const theme = useContext(themeContext);
-//   const darkMode = theme.state.darkMode;
+const Intro = () => {
+  const transition = { duration: 2, type: "spring" };
 
   return (
     <div className="Intro" id="Intro">
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
-          {/* yahan change hy darkmode ka */}
           <span style={{ color:  "" }}>Towards </span>
           <span>Infinity & Beyond</span>
           <span>
-            Monitoring Kelapa Sawit dengan Drone-Rover dari Tim 
-            Universitas Lampung
+            Monitoring dan Penyemprotan Buah di Perkebunan Kelapa Sawit dengan 
+            Drone-Rover dari Tim Universitas Lampung
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
+        <Link to="/dashboard">
           <button className="button i-button">Dashboard</button>
         </Link>
         {/* social icons */}
@@ -49,7 +43,6 @@ const Intro = () => {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={boy} alt="" />
-        {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
@@ -57,7 +50,6 @@ const Intro = () => {
           src={glassesimoji}
           alt=""
         />
-
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
@@ -66,18 +58,14 @@ const Intro = () => {
         >
           <FloatinDiv img={crown} text1="Sawit" text2="Monitoring" />
         </motion.div>
-
-        {/* animation */}
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
           className="floating-div"
         >
-          {/* floatinDiv mein change hy dark mode ka */}
           <FloatinDiv img={thumbup} text1="Best Monitoring" text2="System" />
         </motion.div>
-
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
           className="blur"
