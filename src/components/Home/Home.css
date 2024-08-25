@@ -39,6 +39,7 @@
 .button:hover {
   background: white;
   border: 1px solid var(--orange);
+  text-decoration: none;
   color: var(--orange);
 }
 
@@ -51,4 +52,5 @@
   padding: 10px 20px; /* Sesuaikan padding agar tombol tidak terlalu kecil */
   font-size: 16px;
   height: auto; /* Biarkan tinggi otomatis */
+  text-decoration: none;
 }
